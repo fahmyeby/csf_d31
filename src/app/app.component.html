@@ -1,0 +1,6 @@
+<div>
+    <app-display [currentNumber]="currentNumber"></app-display>
+    <app-navigation
+    [currentNumber]="currentNumber"
+    (numberChange)="onNumberChange($event)"></app-navigation>
+</div>

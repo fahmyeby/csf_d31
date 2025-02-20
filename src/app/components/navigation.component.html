@@ -1,0 +1,9 @@
+<div>
+    <button type="button" (click)="onPrevClick()">PREV</button>
+    <select [(ngModel)]="selectedOffset" (change)="onOffsetChange()">
+        <option *ngFor="let offset of offsets" [value]="offset">
+            {{offset}}
+        </option>
+    </select>
+    <button type="button" (click)="onNextClick()">NEXT</button>
+</div>
